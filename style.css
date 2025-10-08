@@ -1,0 +1,71 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header / Sobre mim */
+header {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Seções */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h2 {
+  border-bottom: 2px solid #1f2937;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Projetos e certificados */
+.project, .certificate {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Habilidades técnicas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contato */
+.contact a {
+  color: #1f2937;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f2937;
+  color: #fff;
+  margin-top: 2rem;
+}
