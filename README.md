@@ -7,8 +7,8 @@ Atualmente atuo como **estagiário de TI no 1º Cartório de Registro Civil de O
 
 ## Tecnologias Utilizadas
 
-- HTML5  
-- CSS3  
+- HTML  
+- CSS  
 - Git  
 - GitHub  
 
