@@ -1,0 +1,71 @@
+/* Componentes reutilizáveis */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:10px;
+  font-size:.9rem;font-weight:600;border:1px solid var(--line);background:transparent;cursor:pointer;
+  transition:transform var(--t),border-color var(--t),box-shadow var(--t)}
+.btn:hover{transform:translateY(-2px);border-color:var(--violet)}
+.btn-primary{background:var(--grad);border-color:transparent;color:var(--on-accent)}
+.btn-primary:hover{box-shadow:0 8px 24px color-mix(in srgb,var(--red) 28%,transparent)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-block;padding:3px 11px;border:1px solid var(--line);border-radius:99px;
+  font:.76rem var(--mono);color:var(--muted)}
+.chip.v{color:var(--violet);border-color:color-mix(in srgb,var(--violet) 45%,transparent)}
+.chip.r{color:var(--red);border-color:color-mix(in srgb,var(--red) 45%,transparent)}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;
+  transition:transform var(--t),border-color var(--t)}
+.card:hover{transform:translateY(-4px);border-color:var(--violet)}
+.card h3{font-size:1.2rem;margin:12px 0 8px}
+.card p{color:var(--muted);font-size:.93rem}
+
+/* Janela de terminal (hero) */
+.terminal{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden;
+  box-shadow:0 20px 50px color-mix(in srgb,var(--violet) 14%,transparent)}
+.terminal-bar{display:flex;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.terminal-bar i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.terminal-bar i:first-child{background:var(--red)}
+.terminal-bar i:nth-child(2){background:var(--violet)}
+.terminal pre{padding:22px;font:.88rem/2 var(--mono);color:var(--muted);white-space:pre-wrap}
+.terminal .p{color:var(--red)}.terminal .o{color:var(--text)}.terminal .g{color:var(--violet)}
+.terminal span{display:block;opacity:0;animation:type .4s ease forwards}
+.terminal span:nth-child(1){animation-delay:.3s}.terminal span:nth-child(2){animation-delay:.9s}
+.terminal span:nth-child(3){animation-delay:1.5s}.terminal span:nth-child(4){animation-delay:2.1s}
+.terminal span:nth-child(5){animation-delay:2.7s}.terminal span:nth-child(6){animation-delay:3.3s}
+@keyframes type{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+
+/* Sobre e habilidades */
+.about p{max-width:62ch;color:var(--muted)}
+.about p+p{margin-top:16px}
+.about p:first-child{color:var(--text);font-size:1.15rem}
+.skill-card h3{margin:0 0 14px;font-size:1.05rem}
+.skills-extra{margin-top:28px}
+.skills-extra h3{font-size:1.05rem;margin-bottom:12px}
+
+/* Projetos */
+.project{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.project img{width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line)}
+.project-body{padding:24px;display:flex;flex-direction:column;flex:1}
+.project-body .chips{margin:auto 0 18px;padding-top:14px}
+.project.featured{grid-column:1/-1}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+@media (min-width:851px){
+  .project.featured{flex-direction:row}
+  .project.featured img{width:48%;aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--line)}
+  .project.featured h3{font-size:1.9rem}
+}
+
+/* Certificados */
+.cert-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.link{color:var(--violet);font-weight:600;font-size:.9rem}
+.link:hover{color:var(--red)}
+.cert-card p{margin-bottom:18px}
+.cta-card{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
+.cta-card:hover{transform:none}
+
+/* Contato */
+.contact-card{display:flex;flex-direction:column;gap:2px}
+.contact-card strong{font-size:1.1rem}
+.contact-card span{color:var(--muted);font-size:.9rem}
+
+/* Nota discreta dentro de cards */
+.note{font-size:.82rem;color:var(--muted);margin-bottom:18px}
