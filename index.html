@@ -1,130 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Bruno Henrique Balsan, estudante de Desenvolvimento de Sistemas.">
-  <title>Bruno Henrique Balsan | Desenvolvimento de Sistemas</title>
-  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
-  <script>try{document.documentElement.dataset.theme=localStorage.getItem('portfolio-theme')||'dark'}catch(e){}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <script src="js/theme.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <title>Portfólio de Bruno</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
-  <header class="site-header"><div class="container">
-    <a href="index.html" class="logo" aria-label="Bruno, início">Bruno</a>
-    <nav class="nav-links" aria-label="Principal">
-      <a href="#sobre">Sobre</a><a href="#formacao">Formação</a><a href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a>
-      <a href="paginas/certificados.html">Certificados</a><a href="#contato">Contato</a>
-    </nav>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">☀</button>
-  </div></header>
 
-  <main id="conteudo">
-    <section class="hero"><div class="container">
-      <div>
-        <h1>Bruno Henrique Balsan</h1>
-        <p class="role">Estudante de Desenvolvimento de Sistemas</p>
-        <p class="hero-text">Construo projetos web e de dados com HTML, CSS, JavaScript e Python, e me interesso por segurança da informação. Sempre aprendendo e transformando ideias em projetos que funcionam.</p>
-        <div class="hero-buttons">
-          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-          <a href="#contato" class="btn">Entrar em contato</a>
-          <a href="documentos/curriculo/Curriculo_Bruno_Balsan.pdf" class="btn" download>Baixar currículo</a>
-        </div>
-      </div>
-      <div class="terminal" aria-hidden="true">
-        <div class="terminal-bar"><i></i><i></i><i></i></div>
-        <pre><span><b class="p">&#36;</b> whoami</span><span class="o">Bruno Henrique Balsan</span><span><b class="p">&#36;</b> cat foco.txt</span><span class="o">Web · Python · Segurança da informação</span><span><b class="p">&#36;</b> status</span><span class="g">● aberto a oportunidades</span></pre>
-      </div>
-    </div></section>
+  <!-- Header / Sobre mim -->
+  <header>
+    <h1>Bruno Henrique Balsan</h1>
+    <p>Estudante de Desenvolvimento de Sistemas</p>
+      <!-- Contato -->
 
-    <section class="section about" id="sobre"><div class="container">
-      <div class="section-head"><h2>Sobre mim</h2></div>
-      <p>Sou estudante de Desenvolvimento de Sistemas e gosto de ver uma ideia virar algo que as pessoas conseguem usar.</p>
-      <p>Meu interesse está em programação, desenvolvimento web e segurança da informação. Na trajetória acadêmica, os projetos práticos ampliaram meus conhecimentos técnicos e minha capacidade de resolver problemas.</p>
-      <p>Busco novas oportunidades para aprimorar minhas habilidades e crescer na área de tecnologia.</p>
-    </div></section>
+      <section>
+    <h2>Contato</h2>
+    <p class="contact">
+      <a href="mailto:brunohenriquebalsan089@exemplo.com">Email</a>
+      <a href="https://github.com/Bruno-Balsan" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/bruno-henrique-balsan-1a260037a/" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+  </header>
 
-    <section class="section" id="formacao"><div class="container">
-      <div class="section-head"><h2>Formação</h2></div>
-      <!-- TODO: adicione o nome da escola e o ano previsto de conclusão -->
-      <article class="card cta-card">
-        <div>
-          <span class="chip v">Em andamento</span>
-          <h3>Ensino Médio com Técnico Integrado em Desenvolvimento de Sistemas</h3>
-          <p>Ensino Médio combinado com o curso técnico, com foco em programação e desenvolvimento de sistemas.</p>
-        </div>
-      </article>
-    </div></section>
+  <!-- Projetos -->
+  <section>
+    <h2>Experiência & Desenvolvimento</h2>
+    <div class="project">
+      <section class="section">
+  <h2>Projetos</h2>
+  <p>
+    Projetos acadêmicos e pessoais desenvolvidos durante meus estudos
+    e cursos, incluindo atividades da Imersão Alura.
+  </p>
 
-    <section class="section" id="habilidades"><div class="container">
-      <div class="section-head"><h2>Habilidades</h2><p>O que desenvolvi nos estudos e nos projetos.</p></div>
-      <div class="grid">
-        <div class="card skill-card"><h3>Web</h3><ul class="chips"><li class="chip v">HTML</li><li class="chip v">CSS responsivo</li><li class="chip v">JavaScript</li></ul></div>
-        <div class="card skill-card"><h3>Dados e programação</h3><ul class="chips"><li class="chip r">Python</li><li class="chip r">Pandas</li><li class="chip r">Jupyter</li><li class="chip r">Streamlit</li></ul></div>
-        <div class="card skill-card"><h3>Ferramentas</h3><ul class="chips"><li class="chip v">Git</li><li class="chip v">GitHub</li></ul></div>
-        <div class="card skill-card"><h3>Segurança</h3><ul class="chips"><li class="chip r">Segurança da informação</li><li class="chip r">LGPD</li></ul></div>
-      </div>
-      <div class="skills-extra"><h3>Habilidades interpessoais</h3>
-        <ul class="chips"><li class="chip">Comunicação</li><li class="chip">Trabalho em equipe</li><li class="chip">Adaptabilidade</li><li class="chip">Comprometimento</li><li class="chip">Pontualidade</li><li class="chip">Inglês</li></ul></div>
-    </div></section>
+  <a href="paginas/projetos.html" target="_self">Ver todos os projetos</a>
+      </section>
+    </div>
+  </section>
 
-    <section class="section" id="projetos"><div class="container">
-      <div class="section-head"><h2>Projetos em destaque</h2><p>Trabalhos acadêmicos e de estudo.</p></div>
-      <div class="grid">
-        <article class="card project featured">
-          <img src="imagens/projetos/sigacrc.png" data-fallback="imagens/projetos/sigacrc.svg" alt="Prévia do projeto SIGACRC" width="640" height="360" loading="lazy">
-          <div class="project-body">
-            <span class="chip r">TCC</span><h3>SIGACRC</h3>
-            <p>Trabalho de conclusão de curso, feito em equipe: uma solução tecnológica para serviços de cartório. Atuei como colaborador do projeto.</p>
-            <ul class="chips"><li class="chip">Desenvolvimento de Sistemas</li></ul>
-            <div class="actions"><a class="btn btn-primary" href="paginas/projetos.html#sigacrc">Ver detalhes</a></div>
-          </div>
-        </article>
-        <article class="card project">
-          <img src="imagens/projetos/feira-cultural.png" data-fallback="imagens/projetos/feira-cultural.svg" alt="Prévia do site da Feira Cultural" width="640" height="360" loading="lazy">
-          <div class="project-body">
-            <span class="chip v">Projeto escolar</span><h3>Feira Cultural</h3>
-            <p>Site sobre a influência da tecnologia na economia do Espírito Santo e de Minas Gerais.</p>
-            <ul class="chips"><li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li></ul>
-            <div class="actions"><a class="btn" href="paginas/projetos.html#feira-cultural">Ver detalhes</a></div>
-          </div>
-        </article>
-        <article class="card project">
-          <img src="imagens/projetos/dados-python.png" data-fallback="imagens/projetos/dados-python.svg" alt="Prévia do projeto Dados com Python" width="640" height="360" loading="lazy">
-          <div class="project-body">
-            <span class="chip v">Imersão Alura</span><h3>Dados com Python</h3>
-            <p>Análise de dados em Python, feita durante a imersão da Alura.</p>
-            <ul class="chips"><li class="chip">Python</li><li class="chip">Jupyter Notebook</li></ul>
-            <div class="actions"><a class="btn" href="paginas/projetos.html#dados-python">Ver detalhes</a></div>
-          </div>
-        </article>
-      </div>
-      <div class="section-action"><a href="paginas/projetos.html" class="btn">Ver todos os projetos</a></div>
-    </div></section>
+  <!-- Certificados -->
+  <section>
+    <h2>Certificados & Cursos</h2>
+    <div class="certificate">
+      <section class="section">
+  <h2>Certificações</h2>
+  <p>
+    Cursos e certificados voltados à área de Tecnologia da Informação,
+    com foco em programação, segurança da informação e boas práticas.
+  </p>
 
-    <section class="section" id="certificados"><div class="container">
-      <div class="section-head"><h2>Certificados e cursos</h2></div>
-      <div class="card cta-card">
-        <p>7 certificados em programação, segurança, dados e IA, da Fundação Bradesco, Alura e Microsoft.</p>
-        <a href="paginas/certificados.html" class="btn btn-primary">Ver certificados</a>
-      </div>
-    </div></section>
+  <a href="paginas/certificados.html" target="_self">Ver todas as certificações</a>
+      </section>
+    </div>
+  </section>
 
-    <section class="section" id="contato"><div class="container">
-      <div class="section-head"><h2>Vamos conversar?</h2><p>Estou aberto a oportunidades, projetos e conexões na área de tecnologia.</p></div>
-      <div class="grid">
-        <a class="card contact-card" href="mailto:brunohenriquebalsan089@gmail.com"><strong>E-mail</strong><span>brunohenriquebalsan089@gmail.com</span></a>
-        <a class="card contact-card" href="https://github.com/Bruno-Balsan" target="_blank" rel="noopener noreferrer"><strong>GitHub</strong><span>Veja meus projetos</span></a>
-        <a class="card contact-card" href="https://www.linkedin.com/in/bruno-henrique-balsan-1a260037a/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong><span>Conecte-se comigo</span></a>
-      </div>
-    </div></section>
-  </main>
-  <footer class="site-footer"><div class="container"><p>© <span id="current-year">2026</span> Bruno Henrique Balsan</p><p>Desenvolvido com dedicação.</p></div></footer>
+  <!-- Habilidades Técnicas -->
+  <section>
+    <h2>Habilidades</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>GitHub</li>
+      <li>Git</li>
+      <li>Comunicação</li>
+      <li>Trabalho em equipe</li>
+      <li>Inglês</li>
+      <li>Pontualidade</li>
+      <li>Adaptabilidade</li>
+      <li>Comprometimento</li>
+      <li>Segurança da Informação</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Bruno - Todos os direitos reservados</p>
+  </footer>
+
 </body>
 </html>

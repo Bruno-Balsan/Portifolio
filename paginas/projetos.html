@@ -1,72 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projetos de Bruno Henrique Balsan.">
-  <title>Projetos | Bruno Henrique Balsan</title>
-  <link rel="icon" href="../imagens/favicon.svg" type="image/svg+xml">
-  <script>try{document.documentElement.dataset.theme=localStorage.getItem('portfolio-theme')||'dark'}catch(e){}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/layout.css">
-  <link rel="stylesheet" href="../css/components.css">
-  <script src="../js/theme.js" defer></script>
-  <script src="../js/main.js" defer></script>
+  <title>Projetos</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
-  <header class="site-header"><div class="container">
-    <a href="../index.html" class="logo" aria-label="Bruno, início">Bruno</a>
-    <nav class="nav-links" aria-label="Principal">
-      <a href="../index.html">Início</a><a href="../index.html#sobre">Sobre</a>
-      <a href="projetos.html" aria-current="page">Projetos</a><a href="certificados.html" >Certificados</a>
-      <a href="../index.html#contato">Contato</a>
-    </nav>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">☀</button>
-  </div></header>
-  <main id="conteudo">
-    <section class="page-header"><div class="container"><h1>Projetos</h1><p>Projetos acadêmicos e de estudo desenvolvidos na minha trajetória.</p></div></section>
-    <section class="page-body"><div class="container">
-      <div class="grid">
-        <article class="card project featured" id="sigacrc">
-          <img src="../imagens/projetos/sigacrc.png" data-fallback="../imagens/projetos/sigacrc.svg" alt="Prévia do projeto SIGACRC" width="640" height="360" loading="lazy">
-          <div class="project-body">
-            <span class="chip r">Trabalho de Conclusão de Curso</span><h3>SIGACRC</h3>
-            <p>Solução tecnológica para atividades do contexto de cartório, desenvolvida em equipe como TCC. Atuei como colaborador no repositório.</p>
-            <ul class="chips"><li class="chip">Desenvolvimento de Sistemas</li><li class="chip">TCC</li><li class="chip r">Online sob demanda</li></ul>
-            <p class="note">O sistema fica hospedado na AWS e só é ativado quando necessário. Se o link não abrir, entre em contato para combinarmos uma demonstração.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="https://sigacrc.com.br" target="_blank" rel="noopener noreferrer">Visualizar projeto ↗</a>
-              <a class="btn" href="https://github.com/Bruno-LimaHG/SIGACRC" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            </div>
-          </div>
-        </article>
-        <article class="card project" id="feira-cultural">
-          <img src="../imagens/projetos/feira-cultural.png" data-fallback="../imagens/projetos/feira-cultural.svg" alt="Prévia do site da Feira Cultural" width="640" height="360" loading="lazy">
-          <div class="project-body">
-            <span class="chip v">Projeto escolar</span><h3>Site da Feira Cultural</h3>
-            <p>Mostra como a tecnologia influencia a economia do Espírito Santo e de Minas Gerais.</p>
-            <ul class="chips"><li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li></ul>
-            <div class="actions">
-              <a class="btn btn-primary" href="https://bruno-balsan.github.io/FeiraCultural/" target="_blank" rel="noopener noreferrer">Visualizar ↗</a>
-              <a class="btn" href="https://github.com/Bruno-Balsan/FeiraCultural" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            </div>
-          </div>
-        </article>
-        <article class="card project" id="dados-python">
-          <img src="../imagens/projetos/dados-python.png" data-fallback="../imagens/projetos/dados-python.svg" alt="Prévia do projeto Dados com Python" width="640" height="360" loading="lazy">
-          <div class="project-body">
-            <span class="chip v">Imersão Alura</span><h3>Dados com Python</h3>
-            <p>Análise de dados feita na imersão da Alura, com Python e ferramentas de exploração de dados.</p>
-            <ul class="chips"><li class="chip">Python</li><li class="chip">Jupyter Notebook</li></ul>
-            <div class="actions"><a class="btn btn-primary" href="https://github.com/Bruno-Balsan/imersao-alura-dados-com-python" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div>
-          </div>
-        </article>
-      </div>
-      <div class="section-action"><a href="../index.html" class="btn">← Voltar ao portfólio</a></div>
-    </div></section>
-  </main>
-  <footer class="site-footer"><div class="container"><p>© <span id="current-year">2026</span> Bruno Henrique Balsan</p><p>Desenvolvido com dedicação.</p></div></footer>
+
+  <header>
+    <h1>Projetos acadêmicos e pessoais</h1>
+     <p class="contact">
+    <a href="../index.html">Voltar para o portfólio</a>
+     </p>
+  </header>
+
+  <section>
+    <h2>Projetos</h2>
+    <div class="project">
+      <h3>Site da Feira Cultural</h3>
+      <p>Projeto escolar criado para a feira cultural, abordando como a tecnologia influencia a economia nos estados do Espírito Santo e Minas Gerais.</p>
+      <p><strong>Tecnologias usadas:</strong> HTML, CSS, JavaScript</p>
+      <p><a href="https://bruno-balsan.github.io/FeiraCultural/" target="_blank">Visualizar projeto</a> | <a href="https://github.com/Bruno-Balsan/FeiraCultural" target="_blank">Ver código no GitHub</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="project">
+    <h3>Imersão Alura - Dados com Python</h3>
+    <p>Programa intensivo da Alura voltado ao desenvolvimento prático em tecnologia, com foco na aplicação de conceitos de programação e análise de dados por meio de projetos realizados durante a imersão.</p>
+    <p><strong>Tecnologias usadas:</strong> Python, Jupyter Notebook</p>
+    <a href="https://github.com/Bruno-Balsan/imersao-alura-dados-com-python" target="_blank">Ver código no GitHub</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Bruno - Todos os direitos reservados</p>
+  </footer>
+
 </body>
 </html>
